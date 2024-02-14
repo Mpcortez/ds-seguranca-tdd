@@ -28,6 +28,7 @@ public class CityService {
         City city = new City();
         city.setName(dto.getName());
         repository.save(city);
+
         return new CityDTO(city);
     }
 }
